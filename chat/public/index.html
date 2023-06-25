@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #mesgForm {
+      display: flex;
+      gap: .5em
+    }
+
+    #chatInput {
+      flex: 1;
+    }
+
+    #chatDisplay {
+      border: 1px black solid;
+      height: 15em;
+      margin-top: 10px;
+    }
+
+    #mesgContainer {
+      display: none;
+    }
+
+    #error,
+    .info {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="login">
+    <input id="username" required />
+    <button id="loginBtn">Login</button>
+  </form>
+  <div id="error"></div>
+  <div id="mesgContainer">
+    <form id="mesgForm">
+      <input type="text" id="chatInput" required />
+      <button id="sendBtn">Send</button>
+    </form>
+    <div id="chatDisplay"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
