@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+button,
+div,
+input {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+div {
+  margin-left: 10px;
+}
+
+#clear {
+  width: 148px;
+}
+
+#screen {
+  width: 140px;
+}
